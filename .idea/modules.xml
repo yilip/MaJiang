@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Majiang.iml" filepath="$PROJECT_DIR$/Majiang.iml" group="Majiang and modules" />
+      <module fileurl="file://$PROJECT_DIR$/../admin/admin.iml" filepath="$PROJECT_DIR$/../admin/admin.iml" group="admin and modules" />
+      <module fileurl="file://$PROJECT_DIR$/../admin/admin-core/admin-core.iml" filepath="$PROJECT_DIR$/../admin/admin-core/admin-core.iml" group="admin and modules" />
+      <module fileurl="file://$PROJECT_DIR$/../admin/admin-web/admin-web.iml" filepath="$PROJECT_DIR$/../admin/admin-web/admin-web.iml" group="admin and modules" />
+      <module fileurl="file://$PROJECT_DIR$/majiang-core/majiang-core.iml" filepath="$PROJECT_DIR$/majiang-core/majiang-core.iml" group="Majiang and modules" />
+      <module fileurl="file://$PROJECT_DIR$/majiang-web/majiang-web.iml" filepath="$PROJECT_DIR$/majiang-web/majiang-web.iml" group="Majiang and modules" />
+    </modules>
+  </component>
+</project>
