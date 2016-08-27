@@ -14,7 +14,8 @@ public class Player {
     private boolean isWatcher = false;//观战选手
     private String pid;
     private Direction direction;//玩家的方位
-    private int score;
+    private int score=1000;
+    public Map<String,Integer>scoreMap=new HashMap<String, Integer>();
     public boolean isDealer;//是否是庄家
     private int dealNum;//连庄次数
     private List<MaItem> initMaItems = new ArrayList<MaItem>();//起始的麻将
@@ -41,6 +42,31 @@ public class Player {
         return handMaItems;
     }
 
+    /**
+     * 麻将结束时，得到打出的一种麻将的数量
+     * @param item
+     * @return
+     */
+    public int getMaItemNum(MaItem item)
+    {
+        int num=0;
+        for(MaItem temp:handMaItems)
+        {
+            if(temp.equals(item))
+                num++;
+        }
+        for(MaItem temp:inMaItems)
+        {
+            if(temp.equals(item))
+                num++;
+        }
+        for(MaItem temp:outMaItems)
+        {
+            if(temp.equals(item))
+                num++;
+        }
+        return num;
+    }
     /**
      * d当其他玩家打出牌的时候的行为
      * @param item

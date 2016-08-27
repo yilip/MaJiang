@@ -7,16 +7,17 @@ import java.util.*;
  * 麻将桌
  */
 public class MaTable {
-    private String tableId;
-    private MaJiang maJiang;
+    protected String tableId;
+    protected MaJiang maJiang;
     public List<Player> players = Collections.synchronizedList(new ArrayList<Player>());
-    private Player dealerPlayer;//庄家
-    private int turn=0;//当前说话玩家
-    private  int count=2;//可以玩的局数，1局4把
-    private  boolean actionConfirm=false;
+    protected Player dealerPlayer;//庄家
+    protected int turn=0;//当前说话玩家
+    protected   int count=2;//可以玩的局数，1局4把
+    protected  boolean actionConfirm=false;
+
 
     //桌面上麻将
-    private Queue<MaItem> leftMaItems = new LinkedList<MaItem>();
+    protected Queue<MaItem> leftMaItems = new LinkedList<MaItem>();
 
     public MaTable(int count) {
         this.count=count;
@@ -105,7 +106,7 @@ public class MaTable {
         }
         return  null;
     }
-    private void setPlayerTurn(Player player)
+    protected void setPlayerTurn(Player player)
     {
         for(int i=0;i<players.size();i++)
         {
