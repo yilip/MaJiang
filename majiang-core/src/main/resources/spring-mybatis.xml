@@ -55,8 +55,8 @@
           destroy-method="close">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
         <property name="url" value="jdbc:mysql://123.56.232.253:3306/api?useUnicode=true&amp;characterEncoding=utf-8"/>
-        <property name="username" value="bijiedev"/>
-        <property name="password" value="wenfex123"/>
+        <property name="username" value=""/>
+        <property name="password" value=""/>
         &lt;!&ndash;maxActive: 最大连接数量&ndash;&gt;
         <property name="maxActive" value="150"/>
         &lt;!&ndash;minIdle: 最小空闲连接&ndash;&gt;
