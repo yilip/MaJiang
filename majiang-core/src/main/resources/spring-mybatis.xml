@@ -22,8 +22,8 @@
           destroy-method="close">
         <property name="driverClass" value="com.mysql.jdbc.Driver"/>
         <property name="jdbcUrl" value="${jdbc.url}"/>
-        <property name="user" value="bijiedev"/>
-        <property name="password" value="wenfex123"/>
+        <property name="user" value=""/>
+        <property name="password" value=""/>
         <!--连接池中保留的最小连接数。 -->
         <property name="minPoolSize" value="5"/>
         <!--连接池中保留的最大连接数。Default: 15 -->
